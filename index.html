@@ -1,174 +1,171 @@
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-
-   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     
 </head>
 <body>
-
+    <!-- Navbar -->
     <div class="navbar">
         <div class="logo">
-          <h1>PORTFOLIO.</h1>
+            <h1>PORTFOLIO.</h1>
         </div>
         <div class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">projects</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#contact">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
         </div>
-      </div>
-      
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    
+    <!-- Home Section -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, it's me</h3>
-            <h1>Mahesh Chandra</h1>
-            <h3>And I am a</h3>
-            <p>
+            <h3 class="slide-in">Hello, it's me</h3>
+            <h1 class="name-animation">Mahesh Chandra</h1>
+            <h3 class="slide-in">And I am a</h3>
+            <p class="fade-in">
                 I am a student at Vasireddy Venkatadri Institute of Technology.
                 <br>I am currently studying in the CSM branch. My roll number is 23BQ1A42I8.
             </p>
-
             <div class="home-sci">
-                <a href="https://github.com/mahesh7-h4x?tab=repositories"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/mahesh7-h4x?tab=repositories" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mahesh-chandra-67a655335?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvBMphlFsQWSAjqWzPBcrDA%3D%3D" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/mahesh-chandra-67a655335" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
         <div class="home-image">
-            <img src="mahi4.jpg" alt="Mahesh Chandra">
+            <img src="mahi4.jpg" alt="Mahesh Chandra" class="float-animation">
         </div>
     </section>
 
+    <!-- About Section -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="pro.jpg" alt="Mahesh Chandra">
+            <img src="pro.jpg" alt="Mahesh Chandra" class="scale-animation">
         </div>
-
         <div class="about-content">
-            <h1>About me</h1>
-            <h2>I am a student</h2>
-            <p>
+            <h1 class="slide-up">About me</h1>
+            <h2 class="slide-up">I am a student</h2>
+            <p class="fade-in">
                 Hello! I'm <strong>Mahesh Chandra</strong>, a passionate Computer Science student at
-                <strong>Vasireddy Venkatadri Institute of Technology (VVIT)</strong>. I'm currently pursuing my degree in the
-                <strong>Computer Science and Machine Learning (CSM)</strong> branch, where I actively explore the intersection
-                of software engineering and artificial intelligence.
+                <strong>Vasireddy Venkatadri Institute of Technology (VVIT)</strong>.
             </p>
-            <p>
+            <p class="fade-in">
                 I enjoy building creative web experiences, experimenting with new technologies, and solving real-world
-                problems through code. I'm also eager to dive into areas like data science, automation, and full-stack
-                development.
+                problems through code.
             </p>
-            <p>
-                Outside of academics, I’m constantly improving my skills through hands-on projects, online courses, and
-                collaborative challenges. My roll number is <strong>23BQ1A42I8</strong>, and I’m always open to learning,
-                networking, and exploring new opportunities in the tech world.
+            <p class="fade-in">
+                Outside of academics, I'm constantly improving my skills through hands-on projects, online courses, and
+                collaborative challenges.
             </p>
             <a href="res.png.png" target="_blank">
-                <button class="open-resume">Open Resume</button>
+                <button class="open-resume pulse-animation">Open Resume</button>
             </a>
         </div>
     </section>
 
+    <!-- Services Section -->
     <section class="services" id="services">
-      <h2>My Services</h2>
-      <div class="services-container">
-          <div class="service-box">
-              <i class="fas fa-code" aria-hidden="true"></i>
-              <h3>Web Development</h3>
-              <p>I build responsive and modern websites using HTML, CSS, JavaScript, and frameworks like React.</p>
-          </div>
-          <div class="service-box">
-              <i class="fas fa-brain" aria-hidden="true"></i>
-              <h3>Machine Learning</h3>
-              <p>I'm exploring data-driven solutions and predictive modeling using Python, NumPy, and Scikit-learn.</p>
-          </div>
-          <div class="service-box">
-              <i class="fas fa-bug" aria-hidden="true"></i>
-              <h3>Automation & Testing</h3>
-              <p>I automate tasks and test applications using tools like Selenium, Robot Framework, and Python.</p>
-          </div>
-          <div class="service-box">
-              <i class="fas fa-paint-brush" aria-hidden="true"></i>
-              <h3>UX/UI Design</h3>
-              <p>I design intuitive and user-friendly interfaces, focusing on a seamless user experience using tools like Figma and Adobe XD.</p>
-          </div>
-      </div>
-      
-    <section class="skills-section" id="skills">
-      <h2>Skills</h2>
-      <div class="skills-container">
-      
-        <div class="skill-category">
-          <h3>Frontend Development</h3>
-  
-          <div class="skill">
-            <span>HTML</span>
-            <div class="skill-bar">
-              <div class="skill-level" data-level="75"></div>
+        <h2 class="section-title">My Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class="fas fa-code" aria-hidden="true"></i>
+                <h3>Web Development</h3>
+                <p>I build responsive and modern websites using HTML, CSS, JavaScript, and frameworks like React.</p>
             </div>
-          </div>
-  
-          <div class="skill">
-            <span>CSS</span>
-            <div class="skill-bar">
-              <div class="skill-level" data-level="60"></div>
+            <div class="service-box">
+                <i class="fas fa-brain" aria-hidden="true"></i>
+                <h3>Machine Learning</h3>
+                <p>I'm exploring data-driven solutions and predictive modeling using Python, NumPy, and Scikit-learn.</p>
             </div>
-          </div>
-  
-          <div class="skill">
-            <span>JavaScript</span>
-            <div class="skill-bar">
-              <div class="skill-level" data-level="10"></div>
+            <div class="service-box">
+                <i class="fas fa-bug" aria-hidden="true"></i>
+                <h3>Automation & Testing</h3>
+                <p>I automate tasks and test applications using tools like Selenium, Robot Framework, and Python.</p>
             </div>
-          </div>
+            <div class="service-box">
+                <i class="fas fa-paint-brush" aria-hidden="true"></i>
+                <h3>UX/UI Design</h3>
+                <p>I design intuitive and user-friendly interfaces, focusing on a seamless user experience.</p>
+            </div>
         </div>
-  
-        <div class="skill-category">
-          <h3>Backend & Tools</h3>
-  
-          <div class="skill">
-            <span>Python</span>
-            <div class="skill-bar">
-              <div class="skill-level" data-level="55"></div>
-            </div>
-          </div>
-  
-          <div class="skill">
-            <span>Node.js</span>
-            <div class="skill-bar">
-              <div class="skill-level" data-level="10"></div>
-            </div>
-          </div>
-  
-          <div class="skill">
-            <span>Git / GitHub</span>
-            <div class="skill-bar">
-              <div class="skill-level" data-level="40"></div>
-            </div>
-          </div>
-        </div>
-  
-      </div>
     </section>
 
-      <section id="projects" class="projects">
-        <h2>Featured Projects</h2>
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="75"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="60"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="10"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend & Tools</h3>
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="55"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Node.js</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="10"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Git / GitHub</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" data-level="40"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Featured Projects</h2>
         <div class="project-grid">
             <div class="project-card">
                 <img src="iceimg.jpg" alt="Icecream-website">
                 <div class="project-info">
                     <h3>Icecream-website</h3>
                     <p>A brief description of the first project. Click below to read more.</p>
-                    <a href=" https://mahesh7-h4x.github.io/icecream-/" target="_blank" class="btn">View on GitHub</a>
+                    <a href="https://mahesh7-h4x.github.io/icecream-/" target="_blank" class="btn">View on GitHub</a>
                 </div>
             </div>
             <div class="project-card">
@@ -184,48 +181,53 @@
                 <div class="project-info">
                     <h3>emmomers</h3>
                     <p>A data analysis project that uses Python and Pandas to predict housing prices.</p>
-                    <a href="https://mahesh7-h4x.github.io/Eccomerce/" target="_blank" class="btn">View on GitHub</a>
+                    <a href="https://github.com/username/project3" target="_blank" class="btn">View on GitHub</a>
                 </div>
             </div>
         </div>
     </section>
 
-      <section id="certifications">
-        <h2>My Certifications</h2>
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <h2 class="section-title">My Certifications</h2>
         <div class="certificates">
-          
-          <div class="certificate-item">
-            <h3>microsoft linkedin certificate</h3>
-            <p>This certificate was awarded for completing an advanced training program in web development, covering both frontend and backend technologies.</p>
-            <a href="microsoft.pdf" target="_blank" class="view-button" role="button" aria-label="View Training Certificate">View Certificate</a>
-          </div>
-      
-          
-          <div class="certificate-item">
-            <h3>L4G Certificate</h3>
-            <p>This certification was awarded for completing the Learning for Growth (L4G) program, focusing on leadership and growth in professional environments.</p>
-            <a href="l4g.pdf" target="_blank" class="view-button" role="button" aria-label="View L4G Certificate">View Certificate</a>
-          </div>
-        
+            <div class="certificate-item">
+                <h3>microsoft linkedin certificate</h3>
+                <p>This certificate was awarded for completing an advanced training program in web development.</p>
+                <a href="microsoft.pdf" target="_blank" class="view-button">View Certificate</a>
+            </div>
+            <div class="certificate-item">
+                <h3>L4G Certificate</h3>
+                <p>This certification was awarded for completing the Learning for Growth (L4G) program.</p>
+                <a href="l4g.pdf" target="_blank" class="view-button">View Certificate</a>
+            </div>
         </div>
-      </section>
-      
+    </section>
 
-      <section class="contact-section" id="contact">
-        <h2>Contact Me</h2>
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
         <p class="contact-description">Feel free to reach out for collaborations, projects, or just a friendly hello!</p>
-      
         <form class="contact-form" action="mailto:your-email@example.com" method="POST" enctype="text/plain">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
         </form>
-      </section>
-      
-    </body>
-   
-    <script>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Mahesh Chandra. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+        <script>
       document.addEventListener("DOMContentLoaded", () => {
         const skillLevels = document.querySelectorAll(".skill-level");
     
@@ -245,6 +247,5 @@
       });
     </script>
     
-  
- 
+</body>
 </html>
